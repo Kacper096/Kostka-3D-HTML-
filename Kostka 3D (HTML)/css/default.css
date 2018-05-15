@@ -1,0 +1,85 @@
+﻿body {
+  
+}
+#scena
+{
+    width:200px;
+    height:200px;
+    border: none;
+    margin:140px;
+    position:relative;
+    perspective:1000px;
+    
+}
+#kostka {
+    position: absolute;
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
+
+    animation:obrot 7s infinite alternate;
+}
+.sciana
+{
+    
+    opacity:0.4;
+    position:absolute;
+    width:100%;
+    height:100%;
+    font-size:50px;
+    color:aliceblue;
+    line-height:200px;
+    text-align:center;
+}
+div.front {
+    
+    transform: translateZ(100px);
+    
+}
+div.back {
+    
+    transform: rotateX(180deg) translateZ(100px);
+    
+}
+div.left {
+    
+    transform: rotateY(-90deg) translateZ(100px);
+    
+}
+div.right {
+    
+    transform: rotateY(90deg) translateZ(100px);
+    
+}
+div.top {
+    
+    transform: rotateX(90deg) translateZ(100px);
+    
+}
+div.bottom {
+    
+    transform: rotateX(-90deg) translateZ(100px);
+   
+}
+.picture
+{
+    height:100%;
+    width:100%;
+}
+#girl
+{
+    height:100%;
+    width:100%;
+    transform:rotate(-45deg);
+}
+@keyframes obrot
+{
+    from
+    {
+        
+    }
+    to
+    {
+        transform:rotateY(400deg) rotateX(360deg) rotateZ(385deg);
+    }
+}
